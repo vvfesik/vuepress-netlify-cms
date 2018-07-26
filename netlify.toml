@@ -1,3 +1,12 @@
 [build]
   command = "yarn docs:build"
   publish = "docs/.vuepress/dist/"
+  base    = "docs/"
+
+[[redirects]]
+  from = "/old"
+  to = "/new"
+
+[[redirects]]
+  from = "/*"
+  to = "/docs/:splat"
