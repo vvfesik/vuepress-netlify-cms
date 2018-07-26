@@ -54,19 +54,21 @@ collections:
 
   - name: "menu"
     label: "Menu"
-    # create: true
+    # editor:
+    #   preview: false
     files: 
       - label: "Main Menu"
         name: "mainmenu"
         file: "docs/.vuepress/mainmenu.json"
         fields:
-          # - {label: "Title", name: "title", widget: "string"}
-          # - {label: "Body", name: "body", widget: "markdown"}
           - label: "Menu Item"
             name: "menuitem"
-            widget: "relation"
-            collection: "doc"
-            searchFields: ["title"]
-            valueField: "title"
-            # fields:
-            # - {label: "Title", name: "title", widget: "string"}
+            widget: "object"
+            fields:
+              - label: "Document"
+                name: "document"
+                widget: "relation"
+                collection: "doc"
+                searchFields: ["title"]
+                valueField: "title"
+                slug: {{slug}}
