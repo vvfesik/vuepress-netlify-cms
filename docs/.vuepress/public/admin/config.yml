@@ -13,45 +13,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  # - name: "settings"
-  #   label: "Settings"
-  #   delete: false # Prevent users from deleting documents in this collection
-  #   create: true
-  #   editor:
-  #     preview: false
-  #   files:
-  #     - name: "general"
-  #       label: "Site Settings"
-  #       file: "mainmenu.json"
-  #       description: "General Site Settings"
-  #       fields:
-  #         - {label: "Global title", name: "site_title", widget: "string"}
-
-          # - label: "Post Settings"
-          #   name: posts
-          #   widget: "object"
-          #   fields:
-          #     - {label: "Number of posts on frontpage", name: front_limit, widget: number}
-          #     - {label: "Default Author", name: author, widget: string}
-          #     - {label: "Default Thumbnail", name: thumb, widget: image, class: "thumb"}
-  # - label: "TestPages"
-  #   name: "testpage"
-  #   create: true
-  #   files:
-  #   - label: "Locations Page"
-  #     name: "locations"
-  #     file: "docs/.vuepress/mainmenu.yml"
-  #     fields:
-  #       - {label: "Title", name: "title", widget: "string"}
-  #       - {label: "Intro", name: "intro", widget: "markdown"}
-  #       - label: "Locations"
-  #         name: "locations"
-  #         widget: "list"
-  #         fields:
-  #           - {label: "Name", name: "name", widget: "string"}
-  #           - {label: "Address", name: "address", widget: "string"}
-
-
+      
   - name: "menu"
     label: "Menu"
     # editor:
@@ -71,5 +33,15 @@ collections:
                 widget: "relation"
                 collection: "doc"
                 searchFields: ["title"]
-                valueField: "title"
-                slug: {{slug}}
+                valueField: "{{slug}}"
+              - label: "Submenu"
+                name: "submenuitem"
+                widget: "list"
+                allow_add: true
+                fields:
+                  - label: "Document"
+                    name: "document"
+                    widget: "relation"
+                    collection: "doc"
+                    searchFields: ["title"]
+                    valueField: "{{slug}}"
