@@ -34,7 +34,7 @@ collections:
                 collection: "doc"
                 displayFields: ["title"]
                 searchFields: ["title"]
-                valueField: "file"
+                valueField: "title"
               - label: "Submenu"
                 name: "submenuitem"
                 widget: "list"
@@ -46,4 +46,4 @@ collections:
                     collection: "doc"
                     displayFields: ["title"]
                     searchFields: ["title"]
-                    valueField: "slug"
+                    valueField: "title"
