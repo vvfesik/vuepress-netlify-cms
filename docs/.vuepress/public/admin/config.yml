@@ -13,7 +13,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      
+
   - name: "menu"
     label: "Menu"
     # editor:
@@ -32,8 +32,9 @@ collections:
                 name: "document"
                 widget: "relation"
                 collection: "doc"
+                displayFields: ["title"]
                 searchFields: ["title"]
-                valueField: "{{slug}}"
+                valueField: "title"
               - label: "Submenu"
                 name: "submenuitem"
                 widget: "list"
@@ -43,5 +44,6 @@ collections:
                     name: "document"
                     widget: "relation"
                     collection: "doc"
+                    displayFields: ["title"]
                     searchFields: ["title"]
                     valueField: "{{slug}}"
