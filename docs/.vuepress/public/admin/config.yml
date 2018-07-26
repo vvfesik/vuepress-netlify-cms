@@ -21,10 +21,10 @@ collections:
       - name: "mainmenu"
         label: "Main Menu"
         file: "docs/.vuepress/mainmenu.json"
-          fields:
-            - name: "menuitems"
-              label: "Menu Items"
-              widget: "text"
+        fields:
+          - name: "menuitems"
+            label: "Menu Items"
+            widget: "text"
 
   # - name: "menu"
   #   label: "Menu"
