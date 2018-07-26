@@ -1,8 +1,8 @@
 {
-  "menuitem": [
+  "menu": [
     {
       "document": "Test New Document",
-      "submenuitem": [
+      "children": [
         {
           "document": "My First Netlify Post"
         }
