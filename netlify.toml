@@ -4,9 +4,10 @@
   base    = "docs/"
 
 [[redirects]]
-  from = "/old"
-  to = "/new"
+  from = "/docs/old.html"
+  to = "/docs/test.html"
 
 [[redirects]]
-  from = "/*"
-  to = "/docs/:splat"
+  from = "/old/"
+  to = "/test.html"
+

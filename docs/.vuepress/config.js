@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/docs/',
   title: 'Netlify CMS + VuePress',
   description: 'Netlify + VuePress',
   themeConfig: {
