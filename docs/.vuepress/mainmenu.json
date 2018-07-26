@@ -1,9 +1,15 @@
 {
   "menuitem": [
     {
+      "document": "Test New Document",
       "submenuitem": [
-        {}
+        {
+          "document": "My First Netlify Post"
+        }
       ]
+    },
+    {
+      "document": "Welcome to the VuePress + Netlify Example"
     }
   ]
 }
