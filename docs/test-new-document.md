@@ -1,5 +1,6 @@
 ---
 title: Test New Document
+slug: test-new
 ---
 ## New Title
 
