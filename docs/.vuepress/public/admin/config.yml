@@ -63,7 +63,8 @@ collections:
         fields:
           - label: "Menu Item"
             name: "menuitem"
-            widget: "object"
+            widget: "list"
+            allow_add: true
             fields:
               - label: "Document"
                 name: "document"
