@@ -1,3 +1,10 @@
 {
-  
+  "menuitem": [
+    {
+      "document": "Test New Document"
+    },
+    {
+      "document": "My First Netlify Post"
+    }
+  ]
 }
